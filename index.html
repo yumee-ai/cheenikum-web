@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html data-capo="">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <link rel="icon" type="image/png" href="./public/_nuxt/ninja-cute.png"/>
+  <title>Night's Watch - AI Security Extension</title>
+  <link crossorigin="" href="./public/_nuxt/entry.hASX0Zfl.css" rel="stylesheet"/>
+  <link as="script" crossorigin="" href="./public/_nuxt/_7TM1oNZ.js" rel="modulepreload"/>
+  <link as="image" href="./public/_nuxt/ninja-cute-3.png" rel="prefetch"/>
+  <link as="image" href="./public/_nuxt/ninja-cute-2.png" rel="prefetch"/>
+  <link as="image" href="./public/_nuxt/ninja-cute.png" rel="prefetch"/>
+  <script>
+   ;(function() {
+     let settings = JSON.parse(localStorage.getItem('una-settings')) || {
+       primaryColors: {"--una-primary-hex":"#ca8a04"},
+       grayColors: {"--una-gray-hex":"#57534e"},
+       primary: "yellow",
+       gray: "stone",
+       radius: 0.5,
+       fontSize: 16
+     };
+     
+     const html = document.documentElement;
+     Object.entries(settings.primaryColors).forEach(([key, value]) => html.style.setProperty(key, value));
+     Object.entries(settings.grayColors).forEach(([key, value]) => html.style.setProperty(key, value));
+     html.style.setProperty('--una-radius', settings.radius + 'rem');
+     html.style.setProperty('--una-font-size', settings.fontSize + 'px');
+   })()
+  </script>
+  <meta content="Protect your sensitive data from AI tools" name="description"/>
+  <meta content="AI security, Chrome extension, data protection, ChatGPT, privacy" name="keywords"/>
+ </head>
+ <body>
+  <div id="__nuxt">
+   <div>
+    <div class="min-h-screen flex flex-col font-sans" data-v-a0e42e92="">
+     <header class="bg-white" data-v-a0e42e92="">
+      <div class="bg-[#F6F5F4] text-center text-sm py-4" data-v-a0e42e92="">
+       <span data-v-a0e42e92="">
+        Prevent sensitive information leaks to AI tools. Keep your personal/organization's data protected
+       </span>
+      </div>
+      <div class="px-8 p-4 mx-auto flex justify-center sm:justify-between items-center" data-v-a0e42e92="">
+       <div class="flex items-center" data-v-a0e42e92="">
+        <a href="/">
+         <img alt="Night's Watch" class="h-8 mt-1 hidden sm:block" style="height: 4rem;" data-v-a0e42e92="" src="./public/_nuxt/logo4.png"/>
+        </a>
+        <nav class="sm:ml-8" data-v-a0e42e92="">
+         <ul class="flex space-x-4 text-gray-600 font-semibold" data-v-a0e42e92="">
+          <li data-v-a0e42e92="">
+           <a class="hover:text-black" data-v-a0e42e92="" href="#features">
+            Features
+           </a>
+          </li>
+          <li data-v-a0e42e92="">
+           <a class="hover:text-black" data-v-a0e42e92="" href="#plans-and-features">
+            Pricing
+           </a>
+          </li>
+          <li data-v-a0e42e92="">
+           <a class="hover:text-black" data-v-a0e42e92="" href="#questions-and-answers">
+            Q&A
+           </a>
+          </li>
+          <li data-v-a0e42e92="">
+           <a class="hover:text-black" data-v-a0e42e92="" href="https://github.com/AaradhyaSaxena" target="_blank">
+            GitHub
+           </a>
+          </li>
+         </ul>
+        </nav>
+       </div>
+       <!-- TODO: Add the actual link -->
+       <a class="btn-default-radius btn-default-variant btn bg-[#121212] hover:bg-[#333333] text-white py-2 px-4 rounded-12 hidden sm:block" 
+          data-v-a0e42e92="" 
+          href="https://chrome.google.com/webstore/detail/your-extension-id" 
+          rel="noopener noreferrer" 
+          target="_blank">
+        Download for Chrome
+       </a>
+      </div>
+     </header>
+     <!-- #########################################################################################  -->    
+     <!-- ###########################        Main content            ##############################  -->
+     <!-- #########################################################################################  -->
+     <main class="flex-grow p-6 md:p-8 lg:p-10" data-v-a0e42e92="">
+      <section class="text-center py-12" data-v-8681ea9b="">
+       <h1 class="text-[70px] font-700 mb-4 line-height-20 tracking-[-0.6px]">
+        Secure Your Data from AI
+       </h1>
+       <p class="sm:text-[21px] font-400 text-[#808080] mb-8">
+        Chrome extension which masks your sensitive data when you are using AI tools.
+        <br/>
+        No data is sent to ChatGPT, Claude, Gemini, etc.
+        <br/>
+        Freely use your favorite AI tools without worrying about your private data.
+       </p>
+       <!-- <img alt="" class="w-[120px] h-[120px] absolute left-1/2 -translate-x-128 top-1/5 hidden sm:block" src="./public/_nuxt/ninja-hathori.png"/> -->
+       <img alt="" class="w-[120px] h-[120px] absolute left-1/2 translate-x-116 top-1/3 hidden sm:block" src="./public/_nuxt/ninja-cute-4.png"/>
+      </section>
+      <section class="bg-[#FAFAFA] rounded-4 pt-8 md:pt-0 overflow-clip sm:relative" data-v-8681ea9b="">
+       <div class="flex flex-col gap-6 sm:gap-0 sm:flex-row justify-between sm:space-x-8 p-4 pt-8 sm:py-12 sm:px-8">
+        <div class="sm:w-1/3 sm:p-6 rounded-lg flex justify-center md:justify-start items-center sm:justify-center">
+         <div>
+          <h2 class="text-4.2 md:text-5 font-medium mb-1.5 line-height-4">
+           Identify sensitive data
+          </h2>
+          <p class="text-gray-600 text-3.8">
+           Add tags for what you consider private
+           <br/>
+           Add websites where you want to be protected
+          </p>
+         </div>
+        </div>
+        <div class="sm:w-1/3 sm:p-6 rounded-lg flex justify-center md:justify-start items-center sm:justify-center">
+         <div>
+          <h2 class="text-4.2 md:text-5 font-medium mb-1.5 line-height-4">
+           Mask your private data
+          </h2>
+          <p class="text-gray-600 text-3.8">
+           Masks your data from clipboard seamlessly
+           <br/>
+           Model hosted locally in your machine, no data sent to cloud!
+          </p>
+         </div>
+        </div>
+        <div class="sm:w-1/3 sm:p-6 rounded-lg flex justify-center md:justify-start items-center sm:justify-center">
+         <div>
+          <h2 class="text-4.2 md:text-5 font-medium mb-1.5 line-height-4 flex items-center">
+           <span>
+            Remove masking from your data
+           </span>
+           <span class="ml-3 md:-mt-1 px-1 py-0.4 text-12px md:text-sm bg-[#F0EEED] text-color-[#050505] rounded-1">
+            Soon
+           </span>
+          </h2>
+          <p class="text-gray-600 text-3.8">
+           As soon as you copy back the data
+           <br/>
+           its unmasked, for your convenience
+          </p>
+         </div>
+        </div>
+       </div>
+      </section>
+      <!-- #########################################################################################  -->
+      <!-- ###########################        How it works?             ############################  -->
+      <!-- #########################################################################################  -->
+      <section class="bg-[#FAFAFA] rounded-4 overflow-clip pt-8 md:pt-12 md:mt-32 md:px-12 pb-12 md:pb-20 mt-16 relative" data-v-8681ea9b="" id="features">
+       <h2 class="text-32px md:text-45px font-600 text-center tracking-[-1px]">
+        How it works?
+       </h2>
+       <img alt="character-3.png" class="w-[140px] h-[140px] absolute left-1/2 -translate-x-146 top-1/3 hidden sm:block" src="./public/_nuxt/ninja-cute-2.png"/>
+       <div class="mt-8">
+        <table class="md:w-602px m-auto border-collapse">
+         <thead>
+          <tr class="border-b">
+           <th class="p-4 font-600 text-left text-[#808080]">
+            Feature
+           </th>
+           <th class="p-4 font-600 text-left">
+            Description
+           </th>
+          </tr>
+         </thead>
+         <tbody>
+          <tr class="border-b">
+            <td class="p-4 font-500 text-14px md:text-16px">
+                Extension Activation
+            </td>
+            <td class="p-4">
+                As soon as the user visits a "XYZ" website, the extension is activated.
+            </td>
+          </tr>
+          <tr class="border-b">
+           <td class="p-4 font-500 text-14px md:text-16px">
+            Data Protection
+           </td>
+           <td class="p-4">
+            Data in your clipboard is analyzed for sensitive information.
+           </td>
+          </tr>
+          <tr class="border-b">
+            <td class="p-4 font-500 text-14px md:text-16px">
+             Data Analysis
+            </td>
+            <td class="p-4">
+             Analysis is done locally, using the gemini Nano model hence no data is sent to cloud!
+            </td>
+           </tr>
+          <tr class="border-b">
+           <td class="p-4 font-500 text-14px md:text-16px">
+            Data Masking
+           </td>
+           <td class="p-4">
+            The sensitive data in your clipboard is masked as soon as the current tab is changed.
+           </td>
+          </tr>
+          <tr class="border-b">
+           <td class="p-4 font-500 text-14px md:text-16px">
+            Data Protection
+           </td>
+           <td class="p-4">
+            The data send to the "XYZ" app is sanitized, so that it does not contain any sensitive information.
+           </td>
+          </tr>
+          <tr class="border-b">
+           <td class="p-4 font-500 text-14px md:text-16px">
+            Data Un-Masking
+           </td>
+           <td class="p-4">
+            Once you copy back the data, it is unmasked in your clipboard directly, for your convenience.
+           </td>
+         </tbody>
+        </table>
+       </div>
+      </section>
+      <!-- #########################################################################################  -->
+      <!-- ################################        Questions           ##############################  -->
+      <!-- #########################################################################################  -->
+      <section class="rounded-4 overflow-clip md:px-12 pt-12 mt-2 md:mt-16 relative" data-v-8681ea9b="" id="questions-and-answers">
+       <h2 class="text-32px md:text-45px font-600 text-center tracking-[-1px]">
+        Questions &amp; answers
+       </h2>
+       <img alt="character-4.png" class="w-[140px] h-[140px] absolute left-1/2 -translate-x-146 top-1/3 hidden sm:block" src="./public/_nuxt/ninja-cute-3.png"/>
+       <hr class="w-604px mx-auto mt-8"/>
+       <div class="flex flex-col md:w-604px mx-auto" data-v-4234fe46="">
+        <div class="border-b" data-v-4234fe46="">
+         <div class="flex justify-between items-center p-4 cursor-pointer hover:bg-gray-50 transition-all rounded-3" data-v-4234fe46="">
+          <span class="font-500 mr-4" data-v-4234fe46="">
+           What does this extension do?
+          </span>
+          <span class="transform transition-transform duration-200 text-6" data-v-4234fe46="" style="transform-origin:center center;">
+           +
+          </span>
+         </div>
+         <div class="overflow-hidden transition-all duration-300" data-v-4234fe46="" style="display:none;">
+          <div class="p-4 pt-0 font-sans font-320 text-16px opacity-80" data-v-4234fe46="">
+           This extension removes sensitive information from your clipboard, so that it is not accidently exposed to AI tools.
+          </div>
+         </div>
+        </div>
+        <div class="border-b" data-v-4234fe46="">
+         <div class="flex justify-between items-center p-4 cursor-pointer hover:bg-gray-50 transition-all rounded-3" data-v-4234fe46="">
+          <span class="font-500 mr-4" data-v-4234fe46="">
+           How do I install and use it?
+          </span>
+          <span class="transform transition-transform duration-200 text-6" data-v-4234fe46="" style="transform-origin:center center;">
+           +
+          </span>
+         </div>
+         <div class="overflow-hidden transition-all duration-300" data-v-4234fe46="" style="display:none;">
+          <div class="p-4 pt-0 font-sans font-320 text-16px opacity-80" data-v-4234fe46="">
+           Install it from the
+           <u>
+            <!-- TODO: Add the actual link -->
+            <a href="https://chrome.google.com/webstore/" target="_blank"> 
+             Chrome Web Store
+            </a>
+           </u>
+           . Once added, click on the extension icon in your browser’s toolbar to customize the extension.
+          </div>
+         </div>
+        </div>
+        <div class="border-b" data-v-4234fe46="">
+         <div class="flex justify-between items-center p-4 cursor-pointer hover:bg-gray-50 transition-all rounded-3" data-v-4234fe46="">
+          <span class="font-500 mr-4" data-v-4234fe46="">
+           Is the extension free?
+          </span>
+          <span class="transform transition-transform duration-200 text-6" data-v-4234fe46="" style="transform-origin:center center;">
+           +
+          </span>
+         </div>
+         <div class="overflow-hidden transition-all duration-300" data-v-4234fe46="" style="display:none;">
+          <div class="p-4 pt-0 font-sans font-320 text-16px opacity-80" data-v-4234fe46="">
+           Yes, the extension is free to use. However, you can upgrade for unlimited usage.
+           <u>
+            Night's Watch Plus
+           </u>
+           version.
+          </div>
+         </div>
+        </div>
+        <div class="border-b" data-v-4234fe46="">
+         <div class="flex justify-between items-center p-4 cursor-pointer hover:bg-gray-50 transition-all rounded-3" data-v-4234fe46="">
+          <span class="font-500 mr-4" data-v-4234fe46="">
+           How can I add more websites to be protected?
+          </span>
+          <span class="transform transition-transform duration-200 text-6" data-v-4234fe46="" style="transform-origin:center center;">
+           +
+          </span>
+         </div>
+         <div class="overflow-hidden transition-all duration-300" data-v-4234fe46="" style="display:none;">
+          <div class="p-4 pt-0 font-sans font-320 text-16px opacity-80" data-v-4234fe46="">
+           You can add more websites to be protected by clicking on the extension icon in your browser’s toolbar and then clicking on the "Add Website" option.
+          </div>
+         </div>
+        </div>
+        <div class="border-b" data-v-4234fe46="">
+        <div class="flex justify-between items-center p-4 cursor-pointer hover:bg-gray-50 transition-all rounded-3" data-v-4234fe46="">
+            <span class="font-500 mr-4" data-v-4234fe46="">
+            How can I add more tags? email, credit card, etc.
+            </span>
+            <span class="transform transition-transform duration-200 text-6" data-v-4234fe46="" style="transform-origin:center center;">
+            +
+            </span>
+        </div>
+        <div class="overflow-hidden transition-all duration-300" data-v-4234fe46="" style="display:none;">
+            <div class="p-4 pt-0 font-sans font-320 text-16px opacity-80" data-v-4234fe46="">
+            You can add more tags by clicking on the extension icon in your browser’s toolbar and then clicking on the "Add Tag" option.
+            </div>
+        </div>
+        </div>
+        <div class="border-b" data-v-4234fe46="">
+         <div class="flex justify-between items-center p-4 cursor-pointer hover:bg-gray-50 transition-all rounded-3" data-v-4234fe46="">
+          <span class="font-500 mr-4" data-v-4234fe46="">
+           How can I get help or suggest features?
+          </span>
+          <span class="transform transition-transform duration-200 text-6" data-v-4234fe46="" style="transform-origin:center center;">
+           +
+          </span>
+         </div>
+         <div class="overflow-hidden transition-all duration-300" data-v-4234fe46="" style="display:none;">
+          <div class="p-4 pt-0 font-sans font-320 text-16px opacity-80" data-v-4234fe46="">
+           Contact us through the
+           <u>
+            <a href="https://www.youtube.com/watch?v=gv9hrQzU0cA">
+             help center
+            </a>
+           </u>
+           . We’re happy to help and always open to suggestions!
+          </div>
+         </div>
+        </div>
+       </div>
+      </section>
+     </main>
+     <!-- #########################################################################################  -->
+     <!-- #####################################        Footer           ############################  -->
+     <!-- #########################################################################################  -->
+     <footer class="py-0 mb-12" data-v-a0e42e92="">
+      <div class="container mx-auto text-center mb-6" data-v-a0e42e92="">
+       <div class="flex justify-center items-center text-[20px] pt-[40px] pb-[72px] gap-[17px] font-600" data-v-a0e42e92="">
+        <!-- TODO: Add the actual link -->
+        <a href="https://chrome.google.com/webstore" rel="noopener noreferrer" target="_blank">
+         <span class="px-6 py-1 bg-[#FAFAFA] rounded-8 flex items-center">
+          review
+          <img class="ml-[10px] mt-[2px]" src="data:image/svg+xml,%3csvg%20width='12'%20height='12'%20viewBox='0%200%2012%2012'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M1%2011L11%201M11%201V9M11%201H3'%20stroke='black'%20stroke-width='1.5'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3c/svg%3e"/>
+         </span>
+        </a>
+        <a href="https://www.youtube.com/watch?v=gv9hrQzU0cA" rel="noopener noreferrer" target="_blank">
+         <span class="px-6 py-1 bg-[#FAFAFA] rounded-8 flex items-center">
+          help center
+          <img class="ml-[10px] mt-[2px]" src="data:image/svg+xml,%3csvg%20width='12'%20height='12'%20viewBox='0%200%2012%2012'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M1%2011L11%201M11%201V9M11%201H3'%20stroke='black'%20stroke-width='1.5'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3c/svg%3e"/>
+         </span>
+        </a>
+       </div>
+       <a href="/">
+        <img alt="Nights Watch" class="h-20 mx-auto" style="height: 10rem;" src="./public/_nuxt/logo4.png"/>
+       </a>
+      </div>
+     <div class="bg-[#FAFAFA] rounded-4 p-8 md:p-12 mt-8 max-w-3xl mx-auto">
+      <p class="font-sans text-14px md:text-16px text-[#808080] leading-relaxed italic">
+       "Night gathers, and now my watch begins. It shall not end until data is free. I shall take no exclusive partners, collect no data, sell no data. I shall wear no tracking crowns and win no manipulative glory. I shall live and die at my post. I am the firewall in the darkness. I am the watcher on the digital walls. I am the shield that guards the private realms of users. I pledge my life and honor to protect digital sovereignty, for this night and all the nights to come."
+      </p>
+      <p class="font-sans text-12px md:text-14px text-[#808080] leading-relaxed mt-4 text-right mr-4" style="text-align: right;">
+        ~ Lord Commander Aaradhya Saxena, and Squire Saundarya Tyagi, Night's Watch
+      </p>
+     </div>
+     </footer>
+    </div>
+   </div>
+  </div>
+  <div id="teleports">
+  </div>
+  <script data-nuxt-data="nuxt-app" data-src="/_payload.json?b891dbd0-55f3-4783-a2bc-fbdf8e9fd6e2" data-ssr="true" id="__NUXT_DATA__" type="application/json">
+   [{"state":1,"once":7,"_errors":8,"serverRendered":5,"path":10,"prerenderedAt":11},["Reactive",2],{"$scolor-mode":3},{"preference":4,"value":4,"unknown":5,"forced":6},"light",true,false,["Set"],["ShallowReactive",9],{},"/",1732214170808]
+  </script>
+  <script>
+   window.__NUXT__={};window.__NUXT__.config={public:{},app:{baseURL:"/",buildId:"b891dbd0-55f3-4783-a2bc-fbdf8e9fd6e2",buildAssetsDir:"./public/_nuxt/",cdnURL:""}}
+  </script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Get all question containers
+      const questions = document.querySelectorAll('[data-v-4234fe46] .border-b');
+      
+      questions.forEach(question => {
+        const questionHeader = question.querySelector('.flex.justify-between');
+        const answerDiv = question.querySelector('.overflow-hidden');
+        const symbol = question.querySelector('.text-6');
+        
+        questionHeader.addEventListener('click', function() {
+          // Toggle answer visibility
+          if (answerDiv.style.display === 'none') {
+            answerDiv.style.display = 'block';
+            symbol.textContent = '−';
+            symbol.style.transform = 'rotate(0deg)';
+          } else {
+            answerDiv.style.display = 'none';
+            symbol.textContent = '+';
+            symbol.style.transform = 'rotate(90deg)';
+          }
+          
+          // Close other answers
+          questions.forEach(otherQuestion => {
+            if (otherQuestion !== question) {
+              const otherAnswer = otherQuestion.querySelector('.overflow-hidden');
+              const otherSymbol = otherQuestion.querySelector('.text-6');
+              otherAnswer.style.display = 'none';
+              otherSymbol.textContent = '+';
+              otherSymbol.style.transform = 'rotate(90deg)';
+            }
+          });
+        });
+      });
+    });
+  </script>
+ </body>
+</html>
