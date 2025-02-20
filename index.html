@@ -3,11 +3,10 @@
  <head>
   <meta charset="utf-8"/>
   <meta content="width=device-width, initial-scale=1" name="viewport"/>
-  <link rel="icon" type="image/png" href="./public/_nuxt/ninja-cute.png"/>
+  <link rel="icon" type="image/png" href="./public/_nuxt/logo3.png"/>
   <title>Cheenikum.ai - GDM Companion</title>
   <link crossorigin="" href="./public/_nuxt/entry.hASX0Zfl.css" rel="stylesheet"/>
   <link as="script" crossorigin="" href="./public/_nuxt/_7TM1oNZ.js" rel="modulepreload"/>
-  <link as="image" href="./public/_nuxt/gdm-logo.png" rel="prefetch"/>
   <link as="image" href="./public/_nuxt/gdm-logo.png" rel="prefetch"/>
   <script>
    ;(function() {
@@ -43,7 +42,7 @@
       <div class="px-8 p-4 mx-auto flex justify-center sm:justify-between items-center" data-v-a0e42e92="">
        <div class="flex items-center" data-v-a0e42e92="">
         <a href="/">
-         <img alt="Cheenikum.ai" class="h-8 mt-1 hidden sm:block" style="height: 4rem;" data-v-a0e42e92="" src="./public/_nuxt/gdm-logo.png"/>
+         <img alt="Cheenikum.ai" class="h-8 mt-1 hidden sm:block" style="height: 4rem;" data-v-a0e42e92="" src="./public/_nuxt/logo3.png"/>
         </a>
         <nav class="sm:ml-8" data-v-a0e42e92="">
          <ul class="flex space-x-4 text-gray-600 font-semibold" data-v-a0e42e92="">
@@ -408,30 +407,6 @@
     });
   </script>
   <script>
-function toggleWaitlistForm() {
-  const form = document.getElementById('waitlistForm');
-  form.classList.toggle('hidden');
-}
-
-function handleWaitlistSubmit(event) {
-  event.preventDefault();
-  const email = event.target.querySelector('input[type="email"]').value;
-  // Here you would typically send this to your backend
-  console.log('Waitlist submission:', email);
-  alert('Thanks for joining the waitlist! Redirecting you now...');
-  window.location.href = 'https://forms.gle/Ld3vN3tHFGbhVgVt8';
-}
-
-// Close form when clicking outside
-document.addEventListener('click', function(event) {
-  const form = document.getElementById('waitlistForm');
-  const button = event.target.closest('button');
-  const formElement = event.target.closest('#waitlistForm');
-  
-  if (!button && !formElement && !form.classList.contains('hidden')) {
-    form.classList.add('hidden');
-  }
-});
 </script>
  </body>
 </html>
