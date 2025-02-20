@@ -73,39 +73,15 @@
        <!-- TODO: Add the actual link -->
        <div class="relative" data-v-a0e42e92="">
         <!-- Waitlist Button -->
-        <button class="btn-default-radius btn-default-variant btn bg-[#121212] hover:bg-[#333333] text-white py-2 px-4 rounded-12 hidden sm:block" 
-                data-v-a0e42e92="" 
-                onclick="toggleWaitlistForm()">
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdz-zFz9y-i1amTaQuwJib7lA6zhrqrrkEMgMkVFLvkYdg7-w/viewform?usp=dialog" 
+           target="_blank" 
+           class="btn-default-radius btn-default-variant btn bg-[#121212] hover:bg-[#333333] text-white py-2 px-4 rounded-12 hidden sm:block" 
+           data-v-a0e42e92="">
           Join the Waitlist!
-        </button>
+        </a>
        </div>
       </div>
-      <!-- Waitlist Form Popup -->
-      <div id="waitlistForm" 
-           class="hidden fixed top-24 right-8 w-[400px] bg-white shadow-xl rounded-lg p-8 z-[100] border border-gray-200">
-        <div class="text-left mb-6">
-          <h3 class="text-2xl font-semibold text-gray-900 mb-2">Join the Waitlist</h3>
-          <p class="text-gray-600">Be the first to know when we launch!</p>
-        </div>
-        
-        <form onsubmit="handleWaitlistSubmit(event)" class="space-y-6">
-          <div class="relative">
-            <input type="email" 
-                   placeholder="Enter your email" 
-                   class="w-full px-4 py-3 text-lg border border-gray-200 rounded-lg focus:ring-2 focus:ring-black focus:border-transparent outline-none"
-                   required>
-          </div>
-
-          <button type="submit" 
-                  class="w-full bg-black hover:bg-gray-800 text-white py-3 px-4 rounded-lg text-lg font-medium flex items-center justify-between">
-            <span>Submit</span>
-          </button>
-
-          <p class="text-sm text-gray-500 text-center">
-            We'll keep you updated on our progress
-          </p>
-        </form>
-      </div>
+      
      </header>
      <!-- #########################################################################################  -->    
      <!-- ###########################        Main content            ##############################  -->
@@ -442,8 +418,8 @@ function handleWaitlistSubmit(event) {
   const email = event.target.querySelector('input[type="email"]').value;
   // Here you would typically send this to your backend
   console.log('Waitlist submission:', email);
-  alert('Thanks for joining the waitlist! We\'ll be in touch soon.');
-  toggleWaitlistForm();
+  alert('Thanks for joining the waitlist! Redirecting you now...');
+  window.location.href = 'https://forms.gle/Ld3vN3tHFGbhVgVt8';
 }
 
 // Close form when clicking outside
