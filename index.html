@@ -33,8 +33,8 @@
  <body>
   <div id="__nuxt">
    <div>
-    <div class="min-h-screen flex flex-col font-sans" data-v-a0e42e92="">
-     <header class="bg-white" data-v-a0e42e92="">
+    <div class="min-h-screen flex flex-col font-sans">
+     <header class="bg-white">
       <!-- <div class="bg-[#F6F5F4] text-center text-sm py-4" data-v-a0e42e92="">
        <span data-v-a0e42e92="">
         Manage your Gestational Diabetes effectively. Keep you and your baby healthy with personalized guidance.
@@ -71,13 +71,40 @@
         </nav>
        </div>
        <!-- TODO: Add the actual link -->
-       <a class="btn-default-radius btn-default-variant btn bg-[#121212] hover:bg-[#333333] text-white py-2 px-4 rounded-12 hidden sm:block" 
-          data-v-a0e42e92="" 
-          href="https://chrome.google.com/webstore/detail/your-extension-id" 
-          rel="noopener noreferrer" 
-          target="_blank">
-        Download App
-       </a>
+       <div class="relative" data-v-a0e42e92="">
+        <!-- Waitlist Button -->
+        <button class="btn-default-radius btn-default-variant btn bg-[#121212] hover:bg-[#333333] text-white py-2 px-4 rounded-12 hidden sm:block" 
+                data-v-a0e42e92="" 
+                onclick="toggleWaitlistForm()">
+          Join the Waitlist!
+        </button>
+       </div>
+      </div>
+      <!-- Waitlist Form Popup -->
+      <div id="waitlistForm" 
+           class="hidden fixed top-24 right-8 w-[400px] bg-white shadow-xl rounded-lg p-8 z-[100] border border-gray-200">
+        <div class="text-left mb-6">
+          <h3 class="text-2xl font-semibold text-gray-900 mb-2">Join the Waitlist</h3>
+          <p class="text-gray-600">Be the first to know when we launch!</p>
+        </div>
+        
+        <form onsubmit="handleWaitlistSubmit(event)" class="space-y-6">
+          <div class="relative">
+            <input type="email" 
+                   placeholder="Enter your email" 
+                   class="w-full px-4 py-3 text-lg border border-gray-200 rounded-lg focus:ring-2 focus:ring-black focus:border-transparent outline-none"
+                   required>
+          </div>
+
+          <button type="submit" 
+                  class="w-full bg-black hover:bg-gray-800 text-white py-3 px-4 rounded-lg text-lg font-medium flex items-center justify-between">
+            <span>Submit</span>
+          </button>
+
+          <p class="text-sm text-gray-500 text-center">
+            We'll keep you updated on our progress
+          </p>
+        </form>
       </div>
      </header>
      <!-- #########################################################################################  -->    
@@ -95,7 +122,6 @@
         <br/>
         Stay on top of your well-being for a healthier motherhood journey.
        </p>
-       <!-- <img alt="" class="w-[120px] h-[120px] absolute left-1/2 -translate-x-128 top-1/5 hidden sm:block" src="./public/_nuxt/ninja-hathori.png"/> -->
        <img alt="" class="w-[120px] h-[120px] absolute left-1/2 translate-x-116 top-1/3 hidden sm:block" src="./public/_nuxt/gdm-logo.png"/>
       </section>
       <!-- set background color here -->
@@ -405,5 +431,31 @@
       });
     });
   </script>
+  <script>
+function toggleWaitlistForm() {
+  const form = document.getElementById('waitlistForm');
+  form.classList.toggle('hidden');
+}
+
+function handleWaitlistSubmit(event) {
+  event.preventDefault();
+  const email = event.target.querySelector('input[type="email"]').value;
+  // Here you would typically send this to your backend
+  console.log('Waitlist submission:', email);
+  alert('Thanks for joining the waitlist! We\'ll be in touch soon.');
+  toggleWaitlistForm();
+}
+
+// Close form when clicking outside
+document.addEventListener('click', function(event) {
+  const form = document.getElementById('waitlistForm');
+  const button = event.target.closest('button');
+  const formElement = event.target.closest('#waitlistForm');
+  
+  if (!button && !formElement && !form.classList.contains('hidden')) {
+    form.classList.add('hidden');
+  }
+});
+</script>
  </body>
 </html>
