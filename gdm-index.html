@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Cheenikum.ai - Manage Gestational Diabetes</title>
+    <link
+      rel="icon"
+      type="image/png"
+      href="https://i.ibb.co/5Ldv9Fw/diabetes-icon.png"
+    />
+
+    <meta
+      name="description"
+      content="Manage your gestational diabetes effectively with real-time insights, meal tracking, and more."
+    />
+    <meta
+      name="keywords"
+      content="Gestational Diabetes, GDM, pregnancy, health, blood glucose"
+    />
+
+    <!-- All CSS inlined below for convenience -->
+    <style>
+      /* ----------------------------------------------------
+         default.JmXnj3ba.css
+      ----------------------------------------------------- */
+      .container[data-v-a0e42e92] {
+        max-width: 1200px;
+      }
+      :root {
+        scroll-behavior: smooth;
+      }
+
+      /* ----------------------------------------------------
+         entry.hASX0Zfl.css
+      ----------------------------------------------------- */
+      *,
+      :before,
+      :after {
+        box-sizing: border-box;
+        border: 0 solid #e5e7eb;
+        font-family: ui-sans-serif, system-ui, sans-serif, Apple Color Emoji,
+          Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+      }
+      html {
+        line-height: 1.5;
+        -webkit-text-size-adjust: 100%;
+        scroll-behavior: smooth;
+      }
+      body {
+        margin: 0;
+        line-height: inherit;
+        background-color: #ffffff;
+        font-family: Arial, sans-serif;
+      }
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      p {
+        margin: 0;
+        padding: 0;
+      }
+      ul,
+      li {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+      img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+      }
+      .min-h-screen {
+        min-height: 100vh;
+      }
+      .flex {
+        display: flex;
+      }
+      .flex-col {
+        flex-direction: column;
+      }
+      .font-sans {
+        font-family: Arial, sans-serif;
+      }
+      .font-700 {
+        font-weight: 700;
+      }
+      .font-600 {
+        font-weight: 600;
+      }
+      .font-500 {
+        font-weight: 500;
+      }
+      .font-400 {
+        font-weight: 400;
+      }
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 1rem;
+      }
+      .bg-white {
+        background-color: #fff;
+      }
+      .bg-[#FAFAFA] {
+        background-color: #FAFAFA;
+      }
+      .text-center {
+        text-align: center;
+      }
+      .rounded-4 {
+        border-radius: 1rem;
+      }
+      .hidden {
+        display: none !important;
+      }
+      /* Additional utility classes from the reference */
+      .mx-auto {
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .mt-8 {
+        margin-top: 2rem;
+      }
+      .mb-4 {
+        margin-bottom: 1rem;
+      }
+      .mb-8 {
+        margin-bottom: 2rem;
+      }
+      .p-4 {
+        padding: 1rem;
+      }
+      .p-6 {
+        padding: 1.5rem;
+      }
+      .p-8 {
+        padding: 2rem;
+      }
+      .p-10 {
+        padding: 2.5rem;
+      }
+      .py-12 {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+      }
+      .md\\:mt-16 {
+        margin-top: 4rem;
+      }
+      .sm\\:block {
+        display: block;
+      }
+      .sm\\:ml-8 {
+        margin-left: 2rem;
+      }
+      .sm\\:justify-between {
+        justify-content: space-between;
+      }
+      .w-[120px] {
+        width: 120px;
+      }
+      .h-[120px] {
+        height: 120px;
+      }
+      .text-[#808080] {
+        color: #808080;
+      }
+      .hover\\:text-black:hover {
+        color: #000;
+      }
+      .bg-[#121212] {
+        background-color: #121212;
+      }
+      .hover\\:bg-[#333333]:hover {
+        background-color: #333333;
+      }
+      .text-white {
+        color: #fff;
+      }
+      .rounded-12 {
+        border-radius: 3rem;
+      }
+      .font-semibold {
+        font-weight: 600;
+      }
+      .text-sm {
+        font-size: 0.875rem;
+      }
+      .pt-8 {
+        padding-top: 2rem;
+      }
+      .pb-12 {
+        padding-bottom: 3rem;
+      }
+      .md\\:pb-20 {
+        padding-bottom: 5rem;
+      }
+      .mt-16 {
+        margin-top: 4rem;
+      }
+      .relative {
+        position: relative;
+      }
+      .border-b {
+        border-bottom: 1px solid #e5e7eb;
+      }
+      .cursor-pointer {
+        cursor: pointer;
+      }
+      .hover\\:bg-gray-50:hover {
+        background-color: #f9fafb;
+      }
+      .rounded-3 {
+        border-radius: 0.75rem;
+      }
+      .transition-all {
+        transition: all 0.15s ease;
+      }
+      .duration-300 {
+        transition-duration: 0.3s;
+      }
+      .overflow-hidden {
+        overflow: hidden;
+      }
+      .p-6 {
+        padding: 1.5rem;
+      }
+      .text-[70px] {
+        font-size: 70px;
+      }
+      .tracking-[-0.6px] {
+        letter-spacing: -0.6px;
+      }
+      .line-height-20 {
+        line-height: 5rem;
+      }
+      .text-gray-600 {
+        color: #4b5563;
+      }
+      .gap-6 {
+        gap: 1.5rem;
+      }
+      .sm\\:gap-0 {
+        gap: 0;
+      }
+      .md\\:justify-start {
+        justify-content: flex-start;
+      }
+      .md\\:text-5 {
+        font-size: 1.25rem;
+      }
+      .font-medium {
+        font-weight: 500;
+      }
+      .mb-1\\.5 {
+        margin-bottom: 0.375rem;
+      }
+      .line-height-4 {
+        line-height: 1rem;
+      }
+      .text-4\\.2 {
+        font-size: 1.05rem;
+      }
+      .text-3\\.8 {
+        font-size: 0.95rem;
+      }
+      .bg-[#F0EEED] {
+        background-color: #F0EEED;
+      }
+      .text-color-[#050505] {
+        color: #050505;
+      }
+
+      /* ----------------------------------------------------
+         index.DlqcZm9r.css
+      ----------------------------------------------------- */
+      @import url("https://fonts.googleapis.com/css2?family=Mandali&display=swap");
+
+      .accordion-enter-active[data-v-4234fe46],
+      .accordion-leave-active[data-v-4234fe46] {
+        overflow: hidden;
+        transition: height 0.3s ease;
+      }
+      .accordion-enter-from[data-v-4234fe46],
+      .accordion-leave-to[data-v-4234fe46] {
+        height: 0 !important;
+      }
+      .accordion-enter-to[data-v-4234fe46],
+      .accordion-leave-from[data-v-4234fe46] {
+        height: var(--auto-height);
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="__nuxt">
+      <div>
+        <div class="min-h-screen flex flex-col font-sans">
+          <!-- HEADER -->
+          <header class="bg-white">
+            <div class="bg-[#F6F5F4] text-center text-sm py-4">
+              <span>
+                Take charge of your pregnancy health—track and manage gestational diabetes with ease.
+              </span>
+            </div>
+            <div class="px-8 p-4 mx-auto flex justify-center sm:justify-between items-center">
+              <div class="flex items-center">
+                <a href="/">
+                  <!-- Replace with your actual brand logo -->
+                  <img
+                    alt="Cheenikum.ai"
+                    class="h-8 mt-1 hidden sm:block"
+                    style="height: 4rem;"
+                    src="https://i.ibb.co/t8M9MBR/Cheenikum.ai-logo.png"
+                  />
+                </a>
+                <nav class="sm:ml-8">
+                  <ul class="flex space-x-4 text-gray-600 font-semibold">
+                    <li><a class="hover:text-black" href="#features">Features</a></li>
+                    <li><a class="hover:text-black" href="#plans-and-features">Pricing</a></li>
+                    <li><a class="hover:text-black" href="#questions-and-answers">Q&A</a></li>
+                    <li>
+                      <a
+                        class="hover:text-black"
+                        href="https://github.com/YourUserName"
+                        target="_blank"
+                      >
+                        GitHub
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+              <!-- Download CTA -->
+              <a
+                class="btn-default-radius btn-default-variant btn bg-[#121212] hover:bg-[#333333] text-white py-2 px-4 rounded-12 hidden sm:block"
+                href="https://play.google.com/store/apps/details?id=Cheenikum.ai"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                Download App
+              </a>
+            </div>
+          </header>
+
+          <!-- MAIN CONTENT -->
+          <main class="flex-grow p-6 md:p-8 lg:p-10">
+            <!-- HERO SECTION -->
+            <section class="text-center py-12">
+              <h1 class="text-[70px] font-700 mb-4 line-height-20 tracking-[-0.6px]">
+                Healthy Pregnancy, Happy Baby
+              </h1>
+              <p class="sm:text-[21px] font-400 text-[#808080] mb-8">
+                Get comprehensive support to track blood glucose, plan meals, and reduce GDM stress.
+                <br />
+                Empower yourself with real-time insights, no more complicated logging, no more guesswork!
+              </p>
+              <!-- Hero image centered -->
+              <div class="flex justify-center">
+                <img
+                  alt="Cheenikum.ai Illustration"
+                  class="w-[120px] h-[120px] sm:block mx-auto"
+                  src="https://i.ibb.co/RBS7Bm8/Cheenikum.ai-1.png"
+                />
+              </div>
+            </section>
+
+            <!-- HIGH-LEVEL FEATURES SECTION -->
+            <section
+              class="bg-[#FAFAFA] rounded-4 pt-8 md:pt-0 overflow-clip sm:relative"
+              id="features"
+            >
+              <div
+                class="flex flex-col gap-6 sm:gap-0 sm:flex-row justify-between sm:space-x-8 p-4 pt-8 sm:py-12 sm:px-8"
+              >
+                <div
+                  class="sm:w-1/3 sm:p-6 rounded-lg flex justify-center md:justify-start items-center sm:justify-center"
+                >
+                  <div>
+                    <h2 class="text-4.2 md:text-5 font-medium mb-1.5 line-height-4">
+                      Monitor Blood Glucose
+                    </h2>
+                    <p class="text-gray-600 text-3.8">
+                      Automatic or manual logging of BG levels
+                      <br />
+                      Real-time charts &amp; trend analysis
+                    </p>
+                  </div>
+                </div>
+
+                <div
+                  class="sm:w-1/3 sm:p-6 rounded-lg flex justify-center md:justify-start items-center sm:justify-center"
+                >
+                  <div>
+                    <h2 class="text-4.2 md:text-5 font-medium mb-1.5 line-height-4">
+                      Personalized Meal Guidance
+                    </h2>
+                    <p class="text-gray-600 text-3.8">
+                      Meal planning with carb counts
+                      <br />
+                      Cultural or local recipes included
+                    </p>
+                  </div>
+                </div>
+
+                <div
+                  class="sm:w-1/3 sm:p-6 rounded-lg flex justify-center md:justify-start items-center sm:justify-center"
+                >
+                  <div>
+                    <h2 class="text-4.2 md:text-5 font-medium mb-1.5 line-height-4 flex items-center">
+                      <span>Stress Management</span>
+                      <span
+                        class="ml-3 md:-mt-1 px-1 py-0.4 text-12px md:text-sm bg-[#F0EEED] text-color-[#050505] rounded-1"
+                      >
+                        New!
+                      </span>
+                    </h2>
+                    <p class="text-gray-600 text-3.8">
+                      Guided relaxation &amp; mental health tips
+                      <br />
+                      Track mood patterns easily
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <!-- HOW IT WORKS SECTION -->
+            <section
+              class="bg-[#FAFAFA] rounded-4 overflow-clip pt-8 md:pt-12 md:mt-32 md:px-12 pb-12 md:pb-20 mt-16 relative"
+              id="plans-and-features"
+            >
+              <h2
+                class="text-32px md:text-45px font-600 text-center tracking-[-1px]"
+              >
+                How it Works?
+              </h2>
+              <div class="flex justify-center mt-4 sm:mt-8">
+                <img
+                  alt="Cheenikum.ai step"
+                  class="w-[140px] h-[140px] hidden sm:block mx-auto"
+                  src="https://i.ibb.co/6g8pMT1/Cheenikum.ai-2.png"
+                />
+              </div>
+              <div class="mt-8">
+                <table class="md:w-602px m-auto border-collapse">
+                  <thead>
+                    <tr class="border-b">
+                      <th class="p-4 font-600 text-left text-[#808080]">
+                        Feature
+                      </th>
+                      <th class="p-4 font-600 text-left">Description</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="border-b">
+                      <td class="p-4 font-500 text-14px md:text-16px">
+                        Setup Profile
+                      </td>
+                      <td class="p-4">
+                        Create an account, input pregnancy due date, GDM
+                        diagnosis details, and link your glucometer.
+                      </td>
+                    </tr>
+                    <tr class="border-b">
+                      <td class="p-4 font-500 text-14px md:text-16px">
+                        Blood Glucose Tracking
+                      </td>
+                      <td class="p-4">
+                        Automatically or manually log BG readings. Color-coded
+                        charts show if you're in range.
+                      </td>
+                    </tr>
+                    <tr class="border-b">
+                      <td class="p-4 font-500 text-14px md:text-16px">
+                        Meal &amp; Nutrition
+                      </td>
+                      <td class="p-4">
+                        Get personalized meal ideas and portion sizes. Carb
+                        counting made simple!
+                      </td>
+                    </tr>
+                    <tr class="border-b">
+                      <td class="p-4 font-500 text-14px md:text-16px">
+                        Stress &amp; Mental Wellbeing
+                      </td>
+                      <td class="p-4">
+                        Access quick stress-busting techniques and track mood
+                        changes over time.
+                      </td>
+                    </tr>
+                    <tr class="border-b">
+                      <td class="p-4 font-500 text-14px md:text-16px">
+                        Postpartum Follow-up
+                      </td>
+                      <td class="p-4">
+                        Continue monitoring after delivery, set reminders for
+                        postpartum glucose tests, and maintain healthy habits.
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </section>
+
+            <!-- Q&A (FAQ) SECTION -->
+            <section
+              class="rounded-4 overflow-clip md:px-12 pt-12 mt-2 md:mt-16 relative"
+              id="questions-and-answers"
+            >
+              <h2
+                class="text-32px md:text-45px font-600 text-center tracking-[-1px]"
+              >
+                Questions &amp; Answers
+              </h2>
+              <div class="flex justify-center mt-4 sm:mt-8">
+                <img
+                  alt="Cheenikum.ai question"
+                  class="w-[140px] h-[140px] hidden sm:block mx-auto"
+                  src="https://i.ibb.co/XYPGHdp/Cheenikum.ai-3.png"
+                />
+              </div>
+              <hr class="w-604px mx-auto mt-8" />
+              <div class="flex flex-col md:w-604px mx-auto" data-v-4234fe46="">
+                <!-- FAQ 1 -->
+                <div class="border-b" data-v-4234fe46="">
+                  <div
+                    class="flex justify-between items-center p-4 cursor-pointer hover:bg-gray-50 transition-all rounded-3"
+                  >
+                    <span class="font-500 mr-4">What is Gestational Diabetes?</span>
+                    <span
+                      class="transform transition-transform duration-200 text-6"
+                      style="transform-origin:center center;"
+                    >
+                      +
+                    </span>
+                  </div>
+                  <div
+                    class="overflow-hidden transition-all duration-300"
+                    style="display:none;"
+                  >
+                    <div
+                      class="p-4 pt-0 font-sans font-320 text-16px opacity-80"
+                    >
+                      Gestational Diabetes occurs during pregnancy and typically
+                      resolves after childbirth. Proper monitoring and
+                      management are essential for you and your baby’s health.
+                    </div>
+                  </div>
+                </div>
+                <!-- FAQ 2 -->
+                <div class="border-b" data-v-4234fe46="">
+                  <div
+                    class="flex justify-between items-center p-4 cursor-pointer hover:bg-gray-50 transition-all rounded-3"
+                  >
+                    <span class="font-500 mr-4">Is the app free?</span>
+                    <span
+                      class="transform transition-transform duration-200 text-6"
+                      style="transform-origin:center center;"
+                    >
+                      +
+                    </span>
+                  </div>
+                  <div
+                    class="overflow-hidden transition-all duration-300"
+                    style="display:none;"
+                  >
+                    <div
+                      class="p-4 pt-0 font-sans font-320 text-16px opacity-80"
+                    >
+                      Yes, basic features such as logging and meal planning are
+                      free. We also offer a Premium plan with advanced AI
+                      insights and teleconsultations.
+                    </div>
+                  </div>
+                </div>
+                <!-- FAQ 3 -->
+                <div class="border-b" data-v-4234fe46="">
+                  <div
+                    class="flex justify-between items-center p-4 cursor-pointer hover:bg-gray-50 transition-all rounded-3"
+                  >
+                    <span class="font-500 mr-4"
+                      >How can I add my doctor’s advice or insulin plan?</span
+                    >
+                    <span
+                      class="transform transition-transform duration-200 text-6"
+                      style="transform-origin:center center;"
+                    >
+                      +
+                    </span>
+                  </div>
+                  <div
+                    class="overflow-hidden transition-all duration-300"
+                    style="display:none;"
+                  >
+                    <div
+                      class="p-4 pt-0 font-sans font-320 text-16px opacity-80"
+                    >
+                      You can update your settings to reflect your doctor’s
+                      recommended blood sugar ranges and insulin doses. The app
+                      adjusts alerts based on those custom values.
+                    </div>
+                  </div>
+                </div>
+                <!-- FAQ 4 -->
+                <div class="border-b" data-v-4234fe46="">
+                  <div
+                    class="flex justify-between items-center p-4 cursor-pointer hover:bg-gray-50 transition-all rounded-3"
+                  >
+                    <span class="font-500 mr-4">What about postpartum usage?</span>
+                    <span
+                      class="transform transition-transform duration-200 text-6"
+                      style="transform-origin:center center;"
+                    >
+                      +
+                    </span>
+                  </div>
+                  <div
+                    class="overflow-hidden transition-all duration-300"
+                    style="display:none;"
+                  >
+                    <div
+                      class="p-4 pt-0 font-sans font-320 text-16px opacity-80"
+                    >
+                      We encourage postpartum monitoring for a few weeks. You
+                      can also track general health and receive reminders for
+                      postpartum diabetes screenings.
+                    </div>
+                  </div>
+                </div>
+                <!-- FAQ 5 -->
+                <div class="border-b" data-v-4234fe46="">
+                  <div
+                    class="flex justify-between items-center p-4 cursor-pointer hover:bg-gray-50 transition-all rounded-3"
+                  >
+                    <span class="font-500 mr-4"
+                      >Who can I contact for help or feature requests?</span
+                    >
+                    <span
+                      class="transform transition-transform duration-200 text-6"
+                      style="transform-origin:center center;"
+                    >
+                      +
+                    </span>
+                  </div>
+                  <div
+                    class="overflow-hidden transition-all duration-300"
+                    style="display:none;"
+                  >
+                    <div
+                      class="p-4 pt-0 font-sans font-320 text-16px opacity-80"
+                    >
+                      Reach us through our
+                      <u>
+                        <a href="https://yourappsite.com/help" target="_blank"
+                          >Help Center</a
+                        ></u
+                      >. We value user feedback and feature suggestions.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </main>
+
+          <!-- FOOTER -->
+          <footer class="py-0 mb-12">
+            <div class="container mx-auto text-center mb-6">
+              <div
+                class="flex justify-center items-center text-[20px] pt-[40px] pb-[72px] gap-[17px] font-600"
+              >
+                <a
+                  href="https://play.google.com/store/apps/details?id=Cheenikum.ai"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  <span
+                    class="px-6 py-1 bg-[#FAFAFA] rounded-8 flex items-center"
+                  >
+                    Rate Us
+                    <img
+                      class="ml-[10px] mt-[2px]"
+                      src="data:image/svg+xml,%3csvg%20width='12'%20height='12'%20viewBox='0%200%2012%2012'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M1%2011L11%201M11%201V9M11%201H3'%20stroke='black'%20stroke-width='1.5'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3c/svg%3e"
+                    />
+                  </span>
+                </a>
+                <a
+                  href="https://yourappsite.com/help"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  <span
+                    class="px-6 py-1 bg-[#FAFAFA] rounded-8 flex items-center"
+                  >
+                    Help Center
+                    <img
+                      class="ml-[10px] mt-[2px]"
+                      src="data:image/svg+xml,%3csvg%20width='12'%20height='12'%20viewBox='0%200%2012%2012'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M1%2011L11%201M11%201V9M11%201H3'%20stroke='black'%20stroke-width='1.5'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3c/svg%3e"
+                    />
+                  </span>
+                </a>
+              </div>
+              <!-- Footer Logo / Brand Name -->
+              <a href="/">
+                <img
+                  alt="Cheenikum.ai"
+                  class="h-20 mx-auto"
+                  style="height: 10rem;"
+                  src="https://i.ibb.co/7v7Vv9y/Cheenikum.ai-foot.png"
+                />
+              </a>
+            </div>
+            <div
+              class="bg-[#FAFAFA] rounded-4 p-8 md:p-12 mt-8 max-w-3xl mx-auto"
+            >
+              <p
+                class="font-sans text-14px md:text-16px text-[#808080] leading-relaxed italic"
+              >
+                “A healthy mother leads to a healthy baby. We’re here to guide
+                your journey through gestational diabetes— every day, every step
+                of the way.”
+              </p>
+              <p
+                class="font-sans text-12px md:text-14px text-[#808080] leading-relaxed mt-4 text-right mr-4"
+                style="text-align: right;"
+              >
+                ~ Team Cheenikum.ai
+              </p>
+            </div>
+          </footer>
+        </div>
+      </div>
+    </div>
+
+    <div id="teleports"></div>
+
+    <!-- FAQ Toggle Script -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const questions = document.querySelectorAll("[data-v-4234fe46] .border-b");
+
+        questions.forEach((question) => {
+          const questionHeader = question.querySelector(".flex.justify-between");
+          const answerDiv = question.querySelector(".overflow-hidden");
+          const symbol = question.querySelector(".text-6");
+
+          questionHeader.addEventListener("click", function () {
+            // Toggle answer visibility
+            if (answerDiv.style.display === "none") {
+              answerDiv.style.display = "block";
+              symbol.textContent = "−";
+              symbol.style.transform = "rotate(0deg)";
+            } else {
+              answerDiv.style.display = "none";
+              symbol.textContent = "+";
+              symbol.style.transform = "rotate(90deg)";
+            }
+
+            // Close other answers
+            questions.forEach((otherQuestion) => {
+              if (otherQuestion !== question) {
+                const otherAnswer = otherQuestion.querySelector(".overflow-hidden");
+                const otherSymbol = otherQuestion.querySelector(".text-6");
+                otherAnswer.style.display = "none";
+                otherSymbol.textContent = "+";
+                otherSymbol.style.transform = "rotate(90deg)";
+              }
+            });
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
